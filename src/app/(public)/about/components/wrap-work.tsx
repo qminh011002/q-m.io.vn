@@ -15,7 +15,8 @@ export const data: {
 }[] = [
 	{
 		id: 1,
-		imageUrl: '/works/unicourse-logo.webp',
+		imageUrl:
+			'https://s3.ap-southeast-1.amazonaws.com/q-m.io/icon-logo/unicourse-logo.webp',
 		endYear: 2025,
 		role: 'Mobile Developer',
 		startYear: 2024,
@@ -24,7 +25,8 @@ export const data: {
 	},
 	{
 		id: 2,
-		imageUrl: '/works/fpt.png',
+		imageUrl:
+			'https://s3.ap-southeast-1.amazonaws.com/q-m.io/icon-logo/FPT_Software_Logo.png',
 		endYear: 2025,
 		role: 'Software Engineer - Front End',
 		startYear: 2024,
@@ -33,7 +35,8 @@ export const data: {
 	},
 	{
 		id: 3,
-		imageUrl: '/works/fpt.png',
+		imageUrl:
+			'https://s3.ap-southeast-1.amazonaws.com/q-m.io/icon-logo/fpt.png',
 		endYear: 2025,
 		role: 'Student',
 		startYear: 2022,

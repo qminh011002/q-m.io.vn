@@ -48,21 +48,21 @@ export function ModeToggle() {
 				align="end"
 			>
 				<DropdownMenuItem
-					className="flex w-full items-center justify-between rounded-md px-3 text-primary"
+					className="flex w-full items-center justify-between rounded-md px-3 text-primary hover:bg-zinc-100 dark:hover:bg-zinc-900"
 					onClick={() => setTheme('light')}
 				>
 					<span>Light</span>
 					{theme === 'light' && <Check />}
 				</DropdownMenuItem>
 				<DropdownMenuItem
-					className="flex w-full items-center justify-between rounded-md px-3 text-primary"
+					className="flex w-full items-center justify-between rounded-md px-3 text-primary hover:bg-zinc-100 dark:hover:bg-zinc-900"
 					onClick={() => setTheme('dark')}
 				>
 					<span>Dark</span>
 					{theme === 'dark' && <Check />}
 				</DropdownMenuItem>
 				<DropdownMenuItem
-					className="flex w-full items-center justify-between rounded-md px-3 text-primary"
+					className="flex w-full items-center justify-between rounded-md px-3 text-primary hover:bg-zinc-100 dark:hover:bg-zinc-900"
 					onClick={() => setTheme('system')}
 				>
 					<span>System</span>

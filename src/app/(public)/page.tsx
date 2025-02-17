@@ -7,10 +7,13 @@ export default function Home() {
 			{/* Shortest description */}
 			<div className="flex flex-col gap-8">
 				<div>
-					<h1 className="text-3xl font-semibold tracking-tight text-primary animate-in">
+					<h1 className="animate-raise text-3xl font-semibold tracking-tight text-primary">
 						hey, Quang Minh here!
 					</h1>
-					<p className="text-zin-600 mt-4 max-w-lg break-words text-secondary">
+					<p
+						style={{ '--index': 1 } as React.CSSProperties}
+						className="text-zin-600 animate-raise mt-4 max-w-lg break-words text-secondary"
+					>
 						I’m a software engineer in Ho Chi Minh, Vietnam, excited
 						to learn and apply the latest web technologies to build
 						modern, efficient, and scalable solutions.
@@ -18,7 +21,10 @@ export default function Home() {
 				</div>
 
 				{/* Socials link */}
-				<ul className="flex items-center gap-x-3">
+				<ul
+					className="animate-raise flex items-center gap-x-3"
+					style={{ '--index': 2 } as React.CSSProperties}
+				>
 					<li>
 						<Link
 							href={'#!'}

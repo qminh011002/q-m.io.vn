@@ -42,15 +42,23 @@ export default function Work({ data, onHover, idSelected }: Props) {
 		>
 			{/* Logo & Title */}
 			<div className="flex items-center justify-between gap-6">
-				<Image
-					className="object-cover"
-					src={data.imageUrl}
-					width={30}
-					quality={100}
-					height={30}
-					alt={data.title}
-					priority
-				/>
+				<div
+					style={{
+						position: 'relative',
+						width: 35,
+						height: 35,
+					}}
+				>
+					<Image
+						alt="Mountains"
+						src={data.imageUrl}
+						fill
+						sizes="30"
+						style={{
+							objectFit: 'contain',
+						}}
+					/>
+				</div>
 				<div className="flex flex-col justify-between">
 					<h3 className="text-primary">{data.role}</h3>
 					<h4 className="text-secondary">{data.title}</h4>

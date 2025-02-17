@@ -75,3 +75,7 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.animate-raise {
+	animation-delay: calc(var(--index) * 130ms);
+}

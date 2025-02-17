@@ -5,15 +5,22 @@ export default function AboutPage() {
 	return (
 		<div>
 			<div className="flex flex-col">
-				<h1 className="text-3xl font-bold tracking-tight text-primary animate-in">
+				<h1 className="animate-raise text-3xl font-bold tracking-tight text-primary">
 					About
 				</h1>
-				<p className="text-zin-600 max-w-lg break-words text-secondary">
+
+				<p
+					style={{ '--index': 1 } as React.CSSProperties}
+					className="text-zin-600 animate-raise max-w-lg break-words text-secondary"
+				>
 					A glimpse into my world.
 				</p>
 
 				{/* About */}
-				<div className="flex flex-col gap-16 md:gap-24">
+				<div
+					style={{ '--index': 2 } as React.CSSProperties}
+					className="animate-raise flex flex-col gap-16 md:gap-24"
+				>
 					<div className="grid grid-cols-1 md:grid-cols-12">
 						<div className="col-span-1 text-secondary md:col-span-3">
 							About

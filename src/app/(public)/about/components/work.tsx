@@ -36,7 +36,7 @@ export default function Work({ data, onHover, idSelected }: Props) {
 			className={clsx(
 				`flex items-center justify-between transition-opacity duration-300`,
 				{
-					'opacity-30': idSelected && data.id !== idSelected,
+					'opacity-20': idSelected && data.id !== idSelected,
 				},
 			)}
 		>

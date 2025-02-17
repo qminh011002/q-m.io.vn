@@ -1,11 +1,12 @@
 import WrapConnect from '@pp/app/(public)/about/components/wrap-connect';
 import WrapWork from '@pp/app/(public)/about/components/wrap-work';
+import Greeting from '@pp/components/greeting';
 import Gallery from './components/gallery';
 
 export default function AboutPage() {
 	return (
-		<div>
-			<div className="flex flex-col gap-y-12 md:gap-y-20">
+		<section>
+			<div className="flex flex-col gap-y-16 md:gap-y-24">
 				<div>
 					<h1 className="animate-raise text-3xl font-bold tracking-tight text-primary">
 						About
@@ -32,8 +33,9 @@ export default function AboutPage() {
 						</div>
 						<div className="col-span-1 mt-2 flex flex-col gap-6 text-primary md:col-span-9 md:mt-0">
 							<p>
-								Good evening, I’m Trần Quang Minh, a Software
-								Engineer based in Ho Chi Minh City, Vietnam.
+								<Greeting />, my name is Trần Quang Minh, a
+								Software Engineer based in Ho Chi Minh City,
+								Vietnam.
 							</p>
 							<p>
 								My passion for web development started in high
@@ -70,6 +72,6 @@ export default function AboutPage() {
 					<WrapWork />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

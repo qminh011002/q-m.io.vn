@@ -18,7 +18,7 @@ const social_connects = [
 			</svg>
 		),
 		title: 'Mails',
-		url: 'qminh.workmode@gmail.com',
+		url: 'mailto:qminh.workmode@gmail.com',
 	},
 	{
 		id: 5,
@@ -53,7 +53,7 @@ const social_connects = [
 			</svg>
 		),
 		title: 'Linkedin',
-		url: '',
+		url: 'https://www.linkedin.com/in/tran-quang-minh-520444214/',
 	},
 
 	{
@@ -71,7 +71,7 @@ const social_connects = [
 			</svg>
 		),
 		title: 'Github',
-		url: '',
+		url: 'https://github.com/qminh011002',
 	},
 	{
 		id: 4,
@@ -92,7 +92,7 @@ const social_connects = [
 			</svg>
 		),
 		title: 'Phone',
-		url: '',
+		url: 'tel:0886751110',
 	},
 	{
 		id: 2,
@@ -109,7 +109,7 @@ const social_connects = [
 			</svg>
 		),
 		title: 'Instagram',
-		url: '',
+		url: 'https://www.instagram.com/13gucci_/',
 	},
 ];
 
@@ -117,14 +117,18 @@ export default function WrapConnect() {
 	const [itemHovered, setItemHovered] = useState<number | null>(null);
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-12">
+		<div className="grid animate-raise grid-cols-1 md:grid-cols-12">
 			<div className="col-span-1 text-secondary md:col-span-3">
 				Connect
 			</div>
 			<div className="col-span-1 mt-2 md:col-span-9 md:mt-0">
 				<ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
-					{social_connects.map((social) => (
-						<li className="col-span-1" key={social.id}>
+					{social_connects.map((social, index) => (
+						<li
+							className="col-span-1 animate-raise"
+							style={{ '--index': index } as React.CSSProperties}
+							key={social.id}
+						>
 							<Connect
 								itemHovered={itemHovered}
 								onHover={(value) => setItemHovered(value)}

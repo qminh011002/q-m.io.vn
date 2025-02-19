@@ -7,8 +7,7 @@ import { useEffect, useState, useRef } from 'react';
 
 const nav_links = [
 	{ id: 0, title: 'Home', href: '/' },
-	{ id: 1, title: 'About', href: '/about' },
-	{ id: 2, title: 'Project', href: '/project' },
+	{ id: 2, title: 'Project', href: '/projects' },
 	{ id: 3, title: 'Contact', href: '/contact' },
 ];
 
@@ -31,7 +30,8 @@ export default function NavItems() {
 	return (
 		<ul ref={navRef} className="relative flex items-center gap-x-2">
 			{nav_links.map((nav) => {
-				const isActive = path === nav.href;
+				const isActive =
+					path === nav.href || path.startsWith(nav.href + '/'); // Fix applied
 				return (
 					<Link
 						href={nav.href}

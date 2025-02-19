@@ -27,7 +27,7 @@ export default function Project({ project, onHover, itemSelected }: Props) {
 
 	return (
 		<Link
-			href=""
+			href={project.href}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			className={clsx('block py-3 transition-opacity duration-300', {

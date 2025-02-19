@@ -92,7 +92,7 @@ export default function ProjectList() {
 							stiffness: 70, // Độ cứng của lò xo
 							damping: 20, // Độ mượt khi box dừng lại
 						}}
-						className="absolute z-10 rounded-lg bg-gray-400"
+						className="absolute z-10 rounded-lg border-[0.5px] border-gray-50 bg-white shadow-md"
 						style={{
 							position: 'absolute',
 							pointerEvents: 'none',

@@ -1,4 +1,9 @@
+import { Metadata } from 'next';
 import ProjectList from './components/project-list';
+
+export const metadata: Metadata = {
+	title: 'Projects | qminh',
+};
 
 export default function ProjectPage() {
 	return (
@@ -11,9 +16,9 @@ export default function ProjectPage() {
 
 					<p
 						style={{ '--index': 1 } as React.CSSProperties}
-						className="text-zin-600 animate-raise max-w-lg break-words text-secondary"
+						className="text-zin-600 max-w-lg animate-raise break-words text-secondary"
 					>
-						5 projects so far. Stay tuned for more!
+						6 projects so far. Stay tuned for more!
 					</p>
 				</div>
 				<div

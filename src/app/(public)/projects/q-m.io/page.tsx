@@ -11,7 +11,7 @@ export default function PortfolioPage() {
 		<div className="flex animate-raise flex-col">
 			<HeaderProject
 				role="Software Engineer"
-				hrefProject=""
+				hrefProject="https://github.com/qminh011002/q-m.io.vn"
 				title="q-m | Next.js Portfolio Website"
 				description="Portfolio website built with Next.js inspired by Medium design"
 				time="2025 - Now"

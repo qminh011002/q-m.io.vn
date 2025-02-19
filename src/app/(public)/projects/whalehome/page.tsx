@@ -10,7 +10,7 @@ export default function WhalehomePage() {
 	return (
 		<div className="animate-raise">
 			<HeaderProject
-				hrefProject=""
+				hrefProject="https://github.com/VinHomeRentApp"
 				role="Front-end & Mobile Developer"
 				title="WhaleHome - Renting home"
 				description="Whale Home is an application that provides rental services for clients in VinHomes GrandPark. Designed to meet the housing rental needs of the community residing in the VinHomes GrandPark project, Whale Home offers a convenient and reliable platform for renting apartments in this modern urban area. The app's features may include searching for apartments based on specific criteria, viewing detailed information about the apartments and surrounding amenities, scheduling appointments for in-person viewings, and completing the rental procedures easily and quickly"

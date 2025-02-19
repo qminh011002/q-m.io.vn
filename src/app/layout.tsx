@@ -1,9 +1,9 @@
+import Footer from '@pp/components/footer';
+import Header from '@pp/components/header';
+import { ThemeProvider } from '@pp/components/theme-provider';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@pp/components/theme-provider';
-import Header from '@pp/components/header';
-import Footer from '@pp/components/footer';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -40,7 +40,7 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Header />
-					<main className="mx-auto max-w-[700px] px-6 py-16 md:px-4 md:py-24">
+					<main className="mx-auto max-w-[700px] px-6 py-16 md:px-4 md:py-20">
 						{children}
 					</main>
 					<Footer />

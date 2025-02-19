@@ -1,4 +1,4 @@
-# 🚀 My Portfolio  
+# 🚀 q-m.io | Professional portfolio website
 
 A **minimal, fast, and responsive** portfolio built with **Next.js**.  
 

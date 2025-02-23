@@ -27,9 +27,9 @@ export const data: {
 		id: 2,
 		imageUrl:
 			'https://s3.ap-southeast-1.amazonaws.com/q-m.io/icon-logo/FPT_Software_Logo.png',
-		endYear: 2025,
+		endYear: 2023,
 		role: 'Software Engineer - Front End',
-		startYear: 2024,
+		startYear: 2022,
 		title: 'FPT Software',
 		url: 'https://fptsoftware.com',
 	},

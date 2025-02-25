@@ -60,7 +60,7 @@ export default function Work({ data, onHover, idSelected }: Props) {
 					/>
 				</div>
 				<div className="flex flex-col justify-between">
-					<h3 className="text-primary">{data.role}</h3>
+					<h3 className="max-w-[170px] text-primary">{data.role}</h3>
 					<h4 className="text-secondary">{data.title}</h4>
 				</div>
 			</div>

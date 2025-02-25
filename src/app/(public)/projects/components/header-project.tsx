@@ -29,17 +29,22 @@ export default function HeaderProject({
 					<Image
 						src={'/me.png'}
 						fill
-						className="absolute bg-transparent"
+						className="absolute bg-transparent object-cover"
 						alt="Tran Quang Minh"
 					/>
 				</div>
 				<div className="">
-					<h2 className="text-primary">Tran Quang Minh</h2>
-					<div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center">
-						<p className="text-secondary">{time}</p>
+					<div className="flex items-center">
+						<h2 className="text-primary">Tran Quang Minh</h2>
+						<Dot size={15} className="block sm:hidden" />
+						<p className="block text-secondary sm:hidden">{time}</p>
+					</div>
+
+					<div className="flex items-center justify-between gap-1">
+						<p className="hidden text-secondary sm:block">{time}</p>
 						<Dot size={15} className="hidden sm:block" />
 						<p className="text-primary">{role}</p>
-						<Dot size={15} className="hidden sm:block" />
+						<Dot size={15} className="sm:block" />
 						<Link
 							target="_blank"
 							className="text-secondary underline underline-offset-4"

@@ -24,28 +24,28 @@ export default function FigureComponent({
 	};
 	return (
 		<figure onClick={onZoom} className="animate-raise cursor-zoom-in">
-			{/* Container chính */}
+			{/* Main container with original background and responsive sizing */}
 			<div
 				style={{ padding: `${padding * 4}px` }}
-				className="relative left-1/2 mt-10 h-fit max-w-[700px] -translate-x-1/2 transform rounded-md border border-stone-200 bg-[#f9f9f9] dark:border-zinc-800 dark:bg-[#191919] md:min-w-[800px] md:rounded-lg"
+				className="relative mx-auto mt-6 w-full max-w-[90%] rounded-md border border-stone-200 bg-[#f9f9f9] dark:border-zinc-800 dark:bg-[#191919] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]"
 			>
-				{/* Wrapper của hình ảnh để kiểm soát overflow */}
+				{/* Image wrapper to control overflow */}
 				<div className="relative overflow-hidden rounded-md">
 					<Image
 						height={height}
-						style={{ height: height, objectFit: objectFit }}
+						style={{ height: 'auto', objectFit: objectFit }}
 						width={500}
 						src={imageSrc}
 						alt={altText}
 						quality={100}
-						className="w-full shadow-none"
+						className="h-auto w-full object-contain shadow-none"
 					/>
 				</div>
 			</div>
 
-			{/* Caption nếu có */}
+			{/* Caption if available */}
 			{caption && (
-				<figcaption className="mx-auto mt-4 max-w-96 text-center text-sm text-zinc-400 dark:text-zinc-500">
+				<figcaption className="mx-auto mt-3 px-4 text-center text-sm text-zinc-400 dark:text-zinc-500">
 					{caption}
 				</figcaption>
 			)}

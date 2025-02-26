@@ -34,7 +34,7 @@ export default function Work({ data, onHover, idSelected }: Props) {
 			target="_blank"
 			href={data.url}
 			className={clsx(
-				`flex items-center justify-between transition-opacity duration-300`,
+				`flex items-center justify-between gap-2 transition-opacity duration-300`,
 				{
 					'opacity-20': idSelected && data.id !== idSelected,
 				},
@@ -47,6 +47,8 @@ export default function Work({ data, onHover, idSelected }: Props) {
 						position: 'relative',
 						width: 35,
 						height: 35,
+						minWidth: 35,
+						minHeight: 35,
 					}}
 				>
 					<Image

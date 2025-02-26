@@ -11,7 +11,7 @@ interface Props {
 		role: string;
 		title: string;
 		startYear: number;
-		endYear: number;
+		endYear?: number;
 		url: string;
 	};
 	onHover: (id: number | null) => void;
@@ -60,12 +60,12 @@ export default function Work({ data, onHover, idSelected }: Props) {
 					/>
 				</div>
 				<div className="flex flex-col justify-between">
-					<h3 className="max-w-[170px] text-primary">{data.role}</h3>
+					<h3 className="max-w-[150px] text-primary">{data.role}</h3>
 					<h4 className="text-secondary">{data.title}</h4>
 				</div>
 			</div>
-			<div className="flex items-center justify-between text-secondary">
-				{data.startYear} - {data.endYear}
+			<div className="flex min-w-fit items-center justify-between text-secondary">
+				{data.startYear} - {data.endYear ?? 'Now'}
 			</div>
 		</Link>
 	);

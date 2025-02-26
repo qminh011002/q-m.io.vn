@@ -10,8 +10,9 @@ export const data: {
 	role: string;
 	title: string;
 	startYear: number;
-	endYear: number;
+	endYear?: number;
 	url: string;
+	pos: number;
 }[] = [
 	{
 		id: 1,
@@ -22,16 +23,18 @@ export const data: {
 		startYear: 2024,
 		title: 'Unicourse LLC',
 		url: 'https://unicourse.vn',
+		pos: 3,
 	},
 	{
 		id: 2,
 		imageUrl:
 			'https://s3.ap-southeast-1.amazonaws.com/q-m.io/icon-logo/FPT_Software_Logo.png',
 		endYear: 2023,
-		role: 'Software Engineer - Front End',
+		role: 'Software Engineer',
 		startYear: 2022,
 		title: 'FPT Software',
 		url: 'https://fptsoftware.com',
+		pos: 2,
 	},
 	{
 		id: 3,
@@ -42,6 +45,16 @@ export const data: {
 		startYear: 2022,
 		title: 'FPT University',
 		url: 'https://viewdaihoc.fpt.edu.vn/fpt-ho-chi-minh/',
+		pos: 1,
+	},
+	{
+		id: 4,
+		imageUrl: '/works/innorix.jpeg',
+		role: 'Software Engineer',
+		startYear: 2025,
+		title: 'INNORIX Enterprise AI & File Transfer Solutions',
+		url: 'https://innorix.com',
+		pos: 4,
 	},
 ];
 
@@ -70,15 +83,17 @@ export default function WrapWork() {
 				</p>
 
 				<ul className="flex flex-col gap-y-8">
-					{data.map((work) => (
-						<li key={work.id}>
-							<Work
-								data={work}
-								onHover={onHover}
-								idSelected={itemHovered}
-							/>
-						</li>
-					))}
+					{data
+						.sort((a, b) => b.pos - a.pos)
+						.map((work) => (
+							<li key={work.id}>
+								<Work
+									data={work}
+									onHover={onHover}
+									idSelected={itemHovered}
+								/>
+							</li>
+						))}
 				</ul>
 			</div>
 		</div>

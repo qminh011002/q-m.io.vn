@@ -34,7 +34,7 @@ export default function Work({ data, onHover, idSelected }: Props) {
 			target="_blank"
 			href={data.url}
 			className={clsx(
-				`flex items-center justify-between gap-2 transition-opacity duration-300`,
+				`flex items-center justify-between gap-2 transition-opacity duration-300 will-change-transform`,
 				{
 					'opacity-20': idSelected && data.id !== idSelected,
 				},

@@ -31,7 +31,7 @@ export default function Connect({ data, onHover, itemHovered }: Props) {
 			onMouseLeave={onMouseLeave}
 			target="_blank"
 			className={clsx(
-				`flex items-center justify-between rounded-lg bg-zinc-50 p-4 text-primary transition-opacity duration-300 dark:bg-zinc-900`,
+				`flex items-center justify-between rounded-lg bg-zinc-50 p-4 text-primary transition-opacity duration-300 will-change-transform dark:bg-zinc-900`,
 				{
 					'opacity-20': itemHovered && data.id !== itemHovered,
 				},

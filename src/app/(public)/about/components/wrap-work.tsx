@@ -69,7 +69,7 @@ export const dataNonItJobs: {
 	pos: number;
 }[] = [
 	{
-		id: 2,
+		id: 200,
 		imageUrl:
 			'https://upload.wikimedia.org/wikipedia/commons/3/3c/H%C3%A4agen-Dazs_Logo.svg',
 		pos: 1,

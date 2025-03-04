@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import Work from '@pp/app/(public)/about/components/work';
 
-export const data: {
+export const dataItJobs: {
 	id: number;
 	imageUrl: string;
 	role: string;
@@ -58,6 +58,29 @@ export const data: {
 	},
 ];
 
+export const dataNonItJobs: {
+	id: number;
+	imageUrl: string;
+	role: string;
+	title: string;
+	startYear: number;
+	endYear?: number;
+	url: string;
+	pos: number;
+}[] = [
+	{
+		id: 2,
+		imageUrl:
+			'https://upload.wikimedia.org/wikipedia/commons/3/3c/H%C3%A4agen-Dazs_Logo.svg',
+		pos: 1,
+		role: 'Barista',
+		startYear: 2021,
+		title: 'Häagen-Dazs Ice Cream Viet Nam',
+		url: 'https://www.icecream.com/us/en/brands/haagen-dazs',
+		endYear: 2022,
+	},
+];
+
 export default function WrapWork() {
 	const [itemHovered, setItemHovered] = useState<number | null>(null);
 
@@ -82,8 +105,25 @@ export default function WrapWork() {
 					.
 				</p>
 
-				<ul className="flex flex-col gap-y-8">
-					{data
+				<ul className="flex flex-col gap-y-5">
+					<p className="font-bold text-primary">IT Work Experience</p>
+					{dataItJobs
+						.sort((a, b) => b.pos - a.pos)
+						.map((work) => (
+							<li key={work.id}>
+								<Work
+									data={work}
+									onHover={onHover}
+									idSelected={itemHovered}
+								/>
+							</li>
+						))}
+				</ul>
+				<ul className="flex flex-col gap-y-5">
+					<p className="font-bold text-primary">
+						Non-IT Work Experience
+					</p>
+					{dataNonItJobs
 						.sort((a, b) => b.pos - a.pos)
 						.map((work) => (
 							<li key={work.id}>

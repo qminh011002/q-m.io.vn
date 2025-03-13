@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
 			},
 		],
 	},
+	logging: false,
 };
 
 export default nextConfig;

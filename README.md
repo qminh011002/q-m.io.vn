@@ -21,7 +21,7 @@ cd your-portfolio
 npm install  
 npm run dev  
 ```
-
+```
 ├── .gitignore
 ├── .prettierrc
 ├── README.md
@@ -141,3 +141,5 @@ npm run dev
     │   └── utils.ts
 ├── tailwind.config.ts
 └── tsconfig.json
+```
+

@@ -52,9 +52,19 @@ export const dataItJobs: {
 		imageUrl: '/works/innorix.jpeg',
 		role: 'Software Engineer',
 		startYear: 2025,
+		endYear: 2025,
 		title: 'INNORIX Enterprise AI & File Transfer Solutions',
 		url: 'https://innorix.com',
 		pos: 4,
+	},
+	{
+		id: 5,
+		imageUrl: '/works/entobel.png',
+		role: 'Fullstack Developer',
+		startYear: 2025,
+		title: 'Entobel | Singapore-based biotech company',
+		url: 'https://www.entobel.com',
+		pos: 5,
 	},
 ];
 

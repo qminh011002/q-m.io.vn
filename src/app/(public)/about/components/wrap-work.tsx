@@ -110,7 +110,7 @@ export default function WrapWork() {
 					experience in SwiftUI — but{' '}
 					<strong className="font-semibold">
 						always eager to learn new technologies and expand my
-						skills
+						skills.
 					</strong>
 					.
 				</p>
